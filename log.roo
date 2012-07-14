@@ -5,3 +5,9 @@ project --topLevelPackage ged --projectName ged --java 6 --packaging WAR
 jpa setup --database POSTGRES --provider HIBERNATE --hostName localhost --databaseName ged_dev --userName postgres --password 1010
 database reverse engineer --schema "documentos" --package ~.domain.documentos --activeRecord true
 web jsf setup --implementation ORACLE_MOJARRA --library PRIMEFACES --theme BLACK_TIE 
+web jsf scaffold --class ~.web.PastasController --entity ~.domain.documentos.Pastas --includeOnMenu 
+web jsf scaffold --class ~.web.LocalizadorController --entity ~.domain.documentos.Localizador --includeOnMenu 
+web jsf scaffold --class ~.web.PastaGrupoController --entity ~.domain.documentos.PastaGrupo --includeOnMenu 
+web jsf scaffold --class ~.web.LocalController --entity ~.domain.documentos.Local --includeOnMenu 
+web jsf scaffold --class ~.web.PastaPropriedadesController --entity ~.domain.documentos.PastaPropriedades --includeOnMenu 
+web jsf scaffold --class ~.web.TipoDadosController --entity ~.domain.documentos.TipoDados --includeOnMenu 
