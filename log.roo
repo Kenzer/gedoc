@@ -1,0 +1,6 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-07-14 15:46:14
+project --topLevelPackage ged --projectName ged --java 6 --packaging WAR
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-07-14 15:46:16
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-07-14 15:48:37
+jpa setup --database POSTGRES --provider HIBERNATE --hostName localhost --databaseName ged_dev --userName postgres --password 1010
+database reverse engineer --schema "documentos" --package ~.domain.documentos --activeRecord true
